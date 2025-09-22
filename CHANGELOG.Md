@@ -1,14 +1,10 @@
 # Historial de Cambios (Changelog)
 
-Todos los cambios notables en este proyecto serán documentados en este archivo.
-
-El formato se basa en [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-y este proyecto se adhiere al [Versionamiento Semántico](https://semver.org/spec/v2.0.0.html).
 
 
 
-[2.0.4] - 2025-09-21
-Corregido (Fixed)
+## [2.0.4] - 2025-09-21
+### Corregido (Fixed)
 Crash Crítico en Desconexión: Se solucionó un error fundamental (NetworkOnMainThreadException) que causaba que la aplicación se cerrara inesperadamente en algunas versiones de Android. Este problema ocurría al detener la conexión VPN o al perder la señal de red. La lógica de desconexión ahora se ejecuta de forma segura en un hilo secundario, garantizando la estabilidad de la aplicación.
 
 ---
